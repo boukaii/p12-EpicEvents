@@ -1,3 +1,10 @@
-from django.shortcuts import render
+from rest_framework import viewsets
+from events.serializers import EventSerializers
+from events.models import Event
 
-# Create your views here.
+
+class EventViewSet(viewsets.ModelViewSet):
+
+    queryset = Event.objects.all()
+    serializer_class = EventSerializers
+    
