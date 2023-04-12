@@ -4,7 +4,12 @@ from django.contrib.auth.models import AbstractBaseUser
 
 class User(AbstractBaseUser):
 
-    username = None
+    ROLE = [('SALES', 'Sales'),
+            ('SUPPORT', 'Support'),
+            ('MANAGEMENT', 'Management')
+            ]
+
+    username = models.CharField(max_length=25, blank=False)
     email = models.EmailField('Email', unique=True)
     first_name = models.CharField(max_length=25, blank=False)
     last_name = models.CharField(max_length=25, blank=False)
@@ -17,7 +22,7 @@ class User(AbstractBaseUser):
     is_admin = models.BooleanField(default=False)
 
     USERNAME_FIELD = 'email'
-    REQUIRED_FIELDS = ['first_name', 'last_name']
-
-    class Meta:
-        ordering = ("last_name", "first_name")
+    # REQUIRED_FIELDS = ['first_name', 'last_name']
+    #
+    # class Meta:
+    #     ordering = ("last_name", "first_name")

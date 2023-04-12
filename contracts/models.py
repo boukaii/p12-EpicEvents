@@ -16,4 +16,4 @@ class Contract(models.Model):
     date_updated = models.DateTimeField(auto_now=True)
     status = models.BooleanField(default=False)
     amount = models.CharField(max_length=50)
-    payment_due = models.DateTimeField()
+    payment_due = models.DateTimeField(auto_now_add=True)
