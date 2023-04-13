@@ -1,4 +1,4 @@
-Projet 12: Développez une architecture back-end sécurisée en utilisant Django ORM
+# Projet 12: Développez une architecture back-end sécurisée en utilisant Django ORM
 
 # Description :
 Projet consistant à créer une API CRM avec Django REST Framwork et PostgreSQL à l'aide d'un diagramme entité-relation.
