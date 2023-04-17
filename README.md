@@ -10,6 +10,21 @@ L'API doit respecter les directives suivantes :
 * Une interface d'administration Django doit également être créée.
 
 
+
+ Client :
+   * Un client peut avoir plusieurs contrats
+   * Un client a un contact commercial
+
+ Contrat :
+   * Un contrat a un client
+   * Un contrat a un contact commercial
+
+ Evénement :
+   * Un événement a un contrat
+   * Un événement a un contact support
+
+
+
 # Documentation :
 ###  **_Pour plus de détails sur le fonctionnement de cette API, se référer à sa documentation (Postman)._**
 

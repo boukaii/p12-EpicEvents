@@ -8,4 +8,4 @@ class EventSerializers(serializers.ModelSerializer):
 
         model = Event
         fields = ['id', 'name', 'contract', 'date_created', 'date_updated', 'support_contact',
-                  'event_date', 'attendees', 'event_date', 'notes']
+                  'event_date', 'participants', 'event_date', 'notes']

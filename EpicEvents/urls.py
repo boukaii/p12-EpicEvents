@@ -4,7 +4,7 @@ from rest_framework import routers
 from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
 
 
-from users.urls import router as test_user
+from authentication.urls import router as test_user
 from clients.urls import router as test_client
 from contracts.urls import router as test_contract
 from events.urls import router as test_events
