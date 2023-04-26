@@ -1,5 +1,6 @@
 from rest_framework import serializers
 from .models import User
+import django.contrib.auth.password_validation as validators
 
 
 class UserSerializer(serializers.ModelSerializer):
@@ -14,3 +15,22 @@ class UserSerializer(serializers.ModelSerializer):
                   'password',
                   'team'
                   ]
+
+    @staticmethod
+    def validate_password(data):
+        validators.validate_password(password=data, user=User)
+        return data
+
+    def create(self, validated_data):
+        user = User.objects.create(
+            username=validated_data['username'],
+            email=validated_data['email'],
+            first_name=validated_data['first_name'],
+            last_name=validated_data['last_name'],
+            team=validated_data['team']
+        )
+
+        user.set_password(validated_data['password'])
+        user.save()
+
+        return user

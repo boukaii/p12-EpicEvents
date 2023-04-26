@@ -16,4 +16,5 @@ class ClientSerializer(serializers.ModelSerializer):
                   "company_name",
                   "date_created",
                   "date_updated",
+                  "sales_contact"
                   ]

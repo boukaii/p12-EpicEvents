@@ -24,6 +24,9 @@ L'API doit respecter les directives suivantes :
    * Un événement a un contact support
 
 
+Un menbre du Support peut seulement modifier leurs events
+
+
 
 # Documentation :
 ###  **_Pour plus de détails sur le fonctionnement de cette API, se référer à sa documentation (Postman)._**
