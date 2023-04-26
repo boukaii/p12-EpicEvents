@@ -24,7 +24,7 @@ L'API doit respecter les directives suivantes :
    * Un événement a un contact support
 
 
-Un menbre du Support peut seulement modifier leurs events
+Un membre du Support peut seulement modifier leurs events
 
 
 

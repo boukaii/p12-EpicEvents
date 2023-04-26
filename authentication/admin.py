@@ -1,12 +1,3 @@
-# from django.contrib import admin
-# from authentication.models import User
-#
-#
-# @admin.register(User)
-# class UserAdmin(admin.ModelAdmin):
-#
-#     list_display = ("last_name", "first_name", "team")
-#     fields = (("first_name", "last_name"), "email", "role", "password", "is_active")
 from django.contrib import admin
 from authentication.models import User
 
