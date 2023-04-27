@@ -29,7 +29,7 @@ Un membre du Support peut seulement modifier leurs events
 
 
 # Documentation :
-###  **_Pour plus de détails sur le fonctionnement de cette API, se référer à sa documentation (Postman)._**
+###  **_Pour plus de détails sur le fonctionnement de cette API, se référer à sa documentation https://documenter.getpostman.com/view/25708562/2s93eR5bWS (Postman)._**
 
 # Installation :
 
@@ -37,7 +37,7 @@ Un membre du Support peut seulement modifier leurs events
 `https://github.com/boukaii/p12-EpicEvents.git`
 
 ###  **_Déplacer vers le nouveau dossier :_**
-`cd pythonProject12`
+`cd  p12-EpicEvents`
 
 ### **_Créez l'environnement virtuel :_**
 `python -m venv env`
